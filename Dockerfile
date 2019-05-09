@@ -10,7 +10,7 @@ USER $NB_UID
 
 RUN conda install -c conda-forge \
     neo4j-python-driver \
-    && conda clean -tipsy
+    && conda build purge-all
 
 RUN pip install neopylib 
 
